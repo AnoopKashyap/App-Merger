@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
-
   constructor() { }
+
+  navMode;
 
   ngOnInit(): void {
   }
 
+  onClickApp(appMode){
+  	this.navMode = appMode
+  }
 }

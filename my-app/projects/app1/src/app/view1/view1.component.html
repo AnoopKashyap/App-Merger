@@ -1,2 +1,9 @@
 <app-nav></app-nav>
-<p>app1 view1 works!</p>
+<br/><br/>
+
+<form class="form-inline" #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+	<div class="form-group mb-2">
+    <input type="text" class="form-control" ngModel name="data" placeholder="Type Something...">
+    <button type="submit" class="btn btn-primary m-2">Submit</button>
+  </div>
+</form>

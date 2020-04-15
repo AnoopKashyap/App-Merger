@@ -1,2 +1,10 @@
-<a routerLink="/app1" >App 1</a> |
-<a routerLink="/app2" >App 2</a>
+<nav class="navbar navbar-light bg-light">
+	<ul class="nav nav-pills nav-fill">
+	  <li class="nav-item">
+	    <a class="nav-link" (click)="onClickApp('app1')" [class.active]="navMode == 'app1'" routerLink="/app1">App 1</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" (click)="onClickApp('app2')" [class.active]="navMode == 'app2'" routerLink="/app2">App 2</a>
+	  </li>
+	</ul>
+</nav>
